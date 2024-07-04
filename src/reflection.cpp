@@ -1,5 +1,5 @@
-#include "reflection.hpp"
+#include "reflection.h"
 
-auto reflective_loading( HANDLE process_handle, HANDLE file_handle, DWORD file_size, void* argument ) {
+bool reflective_loading( HANDLE process_handle, HANDLE file_handle, DWORD file_size, void* argument ) {
 	return true;
 }

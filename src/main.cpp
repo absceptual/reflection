@@ -4,6 +4,8 @@
 
 #include <Windows.h>
 
+#include "reflection.h"
+
 int main( int argc, const char** argv ) {
 	if ( argc <= 1 ) {
 		std::string executable_name{ argv[ 0 ] };
@@ -67,16 +69,17 @@ int main( int argc, const char** argv ) {
 		}
 
 		break;
-	} while (true);
+
+	} while ( true );
 	
-	if (process_handle) {
-		CloseHandle(process_handle);
+	if ( process_handle ) {
+		CloseHandle( process_handle );
 	}
 
-	if (file_handle)
-		CloseHandle(file_handle);
+	if ( file_handle )
+		CloseHandle( file_handle );
 
-	if (file_buffer)
+	if ( file_buffer )
 		delete[] file_buffer;
 
 	return 0;

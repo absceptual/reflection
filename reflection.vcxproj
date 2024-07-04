@@ -132,7 +132,7 @@
     <ClCompile Include="src\reflection.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\reflection.hpp" />
+    <ClInclude Include="src\reflection.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
